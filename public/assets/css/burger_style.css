@@ -1,0 +1,20 @@
+body{
+    background: white;
+    background-position: cover;
+    align-content: center;
+}
+
+h2,h1{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 40;
+    color: black;
+}
+
+.container{
+    border: solid white 1px;
+
+}
+
+img{
+    size: 300px
+}
