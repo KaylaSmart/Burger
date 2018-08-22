@@ -15,23 +15,28 @@ router.get("/", function(req, res){
     });
 });
 
-router.get("/burger/create", function(req,res){
+router.get("/addburger", function(req,res){
     burger.insertOne([
         "burger_name"
     ],[
         req.body.burger_name
     ],function(data){
-        res.redirect("/",)
+        console.log("added a burger");
+        res.render(res)
     });
 });
 
-router.put('/burgers/:id', function(req, res) {
+router.post('/devoured', function(req, res) {
     var condition = 'id = ' + req.params.id;
   
     burger.updateOne({
       devoured: true
     }, condition, function(data) {
-      res.redirect('/');
+        // document.getElementByClassName.('devoured').onclick(){
+           req.params.id == this.devoured;
+    
+        console.log("burger devoured");
+      res.send(res);
     });
   });
 

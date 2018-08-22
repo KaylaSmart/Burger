@@ -2,6 +2,7 @@ body{
     background: white;
     background-position: cover;
     align-content: center;
+    margin: 20 20 20 20 ;
 }
 
 h2,h1{
@@ -10,8 +11,9 @@ h2,h1{
     color: black;
 }
 
-.container{
-    border: solid white 1px;
+.row{
+    border: solid black 1px;
+
 
 }
 
